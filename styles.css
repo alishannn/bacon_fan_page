@@ -1,0 +1,70 @@
+h1{
+  color: red;
+  font-size: 100px;
+}
+body{
+
+  background-image:  url("https://images.pexels.com/photos/750225/pexels-photo-750225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FEF5AC;
+  text-align: center;
+  font-style: italic;
+  font-family: Bradley Hand;
+}
+table{
+  margin:auto;
+  border-color: #97D2EC;
+  border-width: 5px;
+  padding-top: 20px;
+}
+.box {
+  text-align: center;
+  background-color: #25316D;
+  border-radius: 5px;
+  /* padding: 8px; */
+  width: 70%;
+  height: 100px;
+  /* margin: auto; */
+
+}
+
+.box {
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.rotate{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FEF5AC;
+  text-align: center;
+  font-style: italic;
+  font-family: Bradley Hand;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.rotate {
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform:scaleX(1);
+  }
+  100% {
+    transform: scaleX(-1);
+  }
+}
